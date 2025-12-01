@@ -6,7 +6,6 @@
   <title>DigitalWave Solutions - Accueil</title>
   <link rel="stylesheet" href="../assets/output.css">
 </head>
-
 <body class="bg-gray-50 text-gray-800">
 
   <?php 
@@ -18,9 +17,6 @@
   
   ?> 
 
-
-
-  
 
 </body>
 </html>
