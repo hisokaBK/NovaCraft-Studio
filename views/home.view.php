@@ -9,6 +9,7 @@
 <body class="bg-gray-50 text-gray-800">
 
   <?php 
+
   include('../templates/header.temp.php');
 
   include('../templates/homeSection.temp.php');
@@ -16,7 +17,6 @@
   include('../templates/footer.temp.php')
   
   ?> 
-
 
 </body>
 </html>

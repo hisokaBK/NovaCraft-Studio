@@ -613,10 +613,6 @@ video {
   display: grid;
 }
 
-.min-h-\[\] {
-  min-height: ;
-}
-
 .min-h-\[300px\] {
   min-height: 300px;
 }
