@@ -11,8 +11,10 @@
   <?php 
   
     include('../templates/header.temp.php');
-     include('../templates/servicesSection.temp.php');
-     include('../templates/footer.temp.php') 
+
+    include('../templates/servicesSection.temp.php');
+    
+    include('../templates/footer.temp.php') 
   ?>
 
 </body>
