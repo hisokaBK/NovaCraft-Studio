@@ -7,7 +7,7 @@
 </head>
 <style>
          #p{
-               background-image: url('../assets/jj.webp');
+               background-image: url('assets/jj.webp');
                background-size: cover;
                background-position: center;
                -webkit-background-clip: text;
@@ -17,7 +17,7 @@
          }
 
          #sc{
-            background-image: url('../assets/gb.gif');
+            background-image: url('assets/gb.gif');
             height: 500px;
             background-repeat: no-repeat;
             background-size: cover;
