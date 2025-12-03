@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/output.css">
-    <title>Document</title>
+    <title> <?php echo $title ?> </title>
 </head>
 <style>
          #p{
@@ -18,10 +18,14 @@
 
          #sc{
             background-image: url('assets/gb.gif');
-           
             background-repeat: no-repeat;
             background-size: cover;
           
+         }
+         .row{
+              font-size: 50px;
+             font-weight: 600;
+
          }
 
 </style>
@@ -31,8 +35,8 @@
          <p id='p' class="text-img  ">
               404
          </p>
-         <div>
-         <a href="?page=home" class=" text-gray-500 hover:text-gray-300">Accueil</a>
+         <div class="row">
+         <a href="?page=home" class=" text-gray-500 hover:text-gray-300 ">←</a>
          </div>
     </section>
       
