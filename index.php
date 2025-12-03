@@ -9,13 +9,6 @@ $page ;
 
 $pags =['home','services','about','contact'];
   
-if (!isset($_GET['page']) || in_array($_GET['page'],$pags)) {
-     include 'views/' . $page . '.view.php';
-}else {
-    $page='404';
-    include 'views/404.view.php';
-}
-
 $titleMap = [
     'home' => 'NovaCraft Studio - Home',
     'about' => 'À propos - NovaCraft Studio',
@@ -23,6 +16,17 @@ $titleMap = [
     'contact' => 'Contact - NovaCraft Studio',
     '404' => 'Page non trouvée - NovaCraft Studio'
 ];
-$title = $titleMap[$page];
+
+if(!in_array($page,$pags)){
+    $page='404';
+}
+    $title = $titleMap[$page];
+
+if (!isset($_GET['page']) || in_array($_GET['page'],$pags)) {
+     include 'views/' . $page . '.view.php';
+}else {
+    $page='404';
+    include 'views/404.view.php';
+}
 
 ?>
