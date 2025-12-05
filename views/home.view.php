@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DigitalWave Solutions - Accueil</title>
-  <link rel="stylesheet" href="../assets/output.css">
+  <title> <?php echo $title ?> </title>
+  <link rel="stylesheet" href="assets/output.css">
 </head>
-
 <body class="bg-gray-50 text-gray-800">
-  <?php include('../templates/header.tamp.php')?> 
 
-  <section class="container mx-auto py-20 text-center min-h-[300px] "> 
-    <h2 class="text-4xl font-bold mb-6 ">Propulsez votre entreprise vers le digital</h2>
-    <p class="text-lg mb-8 text-gray-600">Création de sites Web, automatisation, solutions digitales sur mesure.</p>
-    <a href="services.html" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700">Voir nos services</a>
-  </section>
+  <?php 
 
-  <?php  include('../templates/footer.tamp.php') ?>
+  include('templates/header.temp.php');
+
+  include('templates/homeSection.temp.php');
+
+  include('templates/footer.temp.php')
+  
+  ?> 
+
 </body>
 </html>
