@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/output.css">
+    <link rel="stylesheet" href="../assets/output.css">
     <title> <?php echo $title ?> </title>
 </head>
 <style>
          #p{
-               background-image: url('assets/jj.jpg');
+               background-image: url('../assets/jj.jpg');
                background-size: cover;
                -webkit-background-clip: text;
                -webkit-text-fill-color: transparent;
@@ -17,7 +17,7 @@
          }
 
          #sc{
-            background-image: url('assets/gb.gif');
+            background-image: url('../assets/gb.gif');
             background-repeat: no-repeat;
             background-size: cover;
           
@@ -25,7 +25,7 @@
          .row{
               font-size: 50px;
              font-weight: 600;
-
+  
          }
 
 </style>
