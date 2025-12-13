@@ -4,18 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/output.css">
     <title>Document</title>
 </head>
-<body>
-         <form class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4" action="/novaCraft_Studio/controllers/form_validation.php" method="POST">
+<body class=' pt-10'>
+          
+         <form class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4" action="https://formsubmit.co/bilalbakessou99@gmail.com" method="POST">
 
-            <input type="text" name="nom" placeholder="Votre nom" class="w-full border  px-4 py-2 rounded-lg" value="">
+              
+          <div class=" text-2xl font-thin"> are you sure !? </div>
+     
+            <input type="text" name="nom" placeholder="Votre nom" class="w-full border  px-4 py-2 rounded-lg" value="<?php echo $_SESSION['valid']['name']?>" hidden>
             
-            <input type="email" name="email" placeholder="Votre email" class="w-full border px-4 py-2 rounded-lg ">
+            <input type="email" name="email" placeholder="Votre email" class="w-full border px-4 py-2 rounded-lg <?php echo $_SESSION['valid']['name']?> "hidden>
        
-            <textarea name="message" placeholder="Votre message" class="w-full border px-4 py-2 rounded-lg "></textarea>
+            <textarea name="message" placeholder="Votre message" class="w-full border px-4 py-2 rounded-lg <?php echo $_SESSION['valid']['name']?>" hidden></textarea>
       
-            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Envoyer</button>
+            <div class='flex gap-4' >
+                 <a href="../index.php"><button type="button" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-red-400">annuler</button></a>
+                 <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-green-700">Confirmer</button>
+
+            </div>
          </form>
 
   

@@ -12,8 +12,8 @@
              class="<?php echo isset($_SERVER['PATH_INFO']) && $_SERVER['PATH_INFO']=='/about'?'text-blue-600 font-medium':'hover:text-blue-600' ?>">À propos</a></li>
              
         <li><a href="<?php echo isset($_SERVER['PATH_INFO'])?'contact':'index.php/contact'?>"
-             class="<?php echo isset($_SERVER['PATH_INFO']) && $_SERVER['PATH_INFO']!='/contact'?'hover:text-blue-600':'text-blue-600 font-medium' ?>">Contact</a></li>
-
+             class="<?php echo (isset($_SERVER['PATH_INFO']) && $_SERVER['PATH_INFO']!='/contact')||!isset($_SERVER['PATH_INFO']) ?'text-black hover:text-blue-600':'text-blue-600 font-medium' ?>">Contact</a>
+        </li>
       </ul>
     </nav>
   </header>
