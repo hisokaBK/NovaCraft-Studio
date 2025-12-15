@@ -1,32 +1,26 @@
-<?php 
+<?php
 $page ;
- if(!isset($_GET['page'])){
-    $page='home';
- }else{
-    $page=$_GET['page'];
- }
+if(isset($_SERVER['PATH_INFO'])){
+    $page = trim($_SERVER['PATH_INFO'],'/');
+}else{
+   $page='home';
+}
 
+$allowed = ['home','about','services','contact'];
 
-$pags =['home','services','about','contact'];
-  
-$titleMap = [
-    'home' => 'NovaCraft Studio - Home',
+if (!in_array($page, $allowed)) {
+    $page = '404';
+}
+$pageTitles = [
+    'home' => 'Accueil - NovaCraft Studio',
     'about' => 'À propos - NovaCraft Studio',
     'services' => 'Services - NovaCraft Studio',
     'contact' => 'Contact - NovaCraft Studio',
-    '404' => 'Page non trouvée - NovaCraft Studio'
+    '404' => 'Page non trouvée'
 ];
 
-if(!in_array($page,$pags)){
-    $page='404';
-}
-    $title = $titleMap[$page];
+$title = $pageTitles[$page];
 
-if (!isset($_GET['page']) || in_array($_GET['page'],$pags)) {
-     include 'views/' . $page . '.view.php';
-}else {
-    $page='404';
-    include 'views/404.view.php';
-}
+include_once "views/".$page.'.view.php';
 
 ?>
