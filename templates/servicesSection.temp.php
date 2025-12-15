@@ -4,10 +4,6 @@ $services_fill=file_get_contents("data/services_list.json") ;
 
 $services=json_decode($services_fill,true);
 
-echo "<pre>";
-  print_r($services);
-echo "</pre>";
-
 ?>
 <section class="container mx-auto py-16 px-4 min-h-[420px]">
     <h2 class="text-3xl font-bold mb-8 text-center">Nos Services</h2>
